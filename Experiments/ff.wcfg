@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP1E/Experiments/t_ff_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="t_ff_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/t_ff_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/t" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">t</obj_property>
+      <obj_property name="ObjectShortName">t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s</obj_property>
+      <obj_property name="ObjectShortName">s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r</obj_property>
+      <obj_property name="ObjectShortName">r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/j" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">j</obj_property>
+      <obj_property name="ObjectShortName">j</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/k" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">k</obj_property>
+      <obj_property name="ObjectShortName">k</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qt</obj_property>
+      <obj_property name="ObjectShortName">qt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qnt</obj_property>
+      <obj_property name="ObjectShortName">qnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qs</obj_property>
+      <obj_property name="ObjectShortName">qs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qns" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qns</obj_property>
+      <obj_property name="ObjectShortName">qns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qj" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qj</obj_property>
+      <obj_property name="ObjectShortName">qj</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qnj" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qnj</obj_property>
+      <obj_property name="ObjectShortName">qnj</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qd</obj_property>
+      <obj_property name="ObjectShortName">qd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/qnd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qnd</obj_property>
+      <obj_property name="ObjectShortName">qnd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_ff_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

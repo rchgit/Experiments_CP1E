@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP1E/Experiments/moore1_tb_isim_beh.exe" -prj "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP1E/Experiments/moore1_tb_beh.prj" "work.moore1_tb" 
