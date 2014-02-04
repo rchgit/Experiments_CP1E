@@ -61,34 +61,71 @@ begin
 		if cur_state = S0 then
 			if a = '0' then
 				next_state <= S1;
-				x <= "0010";
+				--x <= "0010";
 			elsif a = '1' then
 				next_state <= S0;
-				x <= "0001";
+				--x <= "0001";
 			end if;
 		elsif cur_state = S1 then
 			if b = '0' then
 				next_state <= S1;
-				x <= "0010";
+				--x <= "0010";
 			elsif b = '1' then
 				next_state <= S2;
-				x <= "0100";
+				--x <= "0100";
 			end if;
 		elsif cur_state = S2 then
 			if c = '1' then
 				next_state <= S2;
-				x <= "0100";
+				--x <= "0100";
 			elsif c = '0' then
 				next_state <= S3;
-				x <= "1000";
+				--x <= "1000";
 			end if;
 		elsif cur_state = S3 then
 			if d = '0' then
 				next_state <= S3;
-				x <= "1000";
+				--x <= "1000";
 			elsif d = '1' then
 				next_state <= S0;
-				x <= "0001";
+				--x <= "0001";
+			end if;
+		end if;
+	end process;
+	
+	output_dec: process(a,b,c,d,cur_state)
+	begin
+		if cur_state = S0 then
+			if a = '0' then
+				--next_state <= S1;
+				x <= "0010";
+			elsif a = '1' then
+				next_state <= S0;
+				--x <= "0001";
+			end if;
+		elsif cur_state = S1 then
+			if b = '0' then
+				next_state <= S1;
+				--x <= "0010";
+			elsif b = '1' then
+				next_state <= S2;
+				--x <= "0100";
+			end if;
+		elsif cur_state = S2 then
+			if c = '1' then
+				next_state <= S2;
+				--x <= "0100";
+			elsif c = '0' then
+				next_state <= S3;
+				--x <= "1000";
+			end if;
+		elsif cur_state = S3 then
+			if d = '0' then
+				next_state <= S3;
+				--x <= "1000";
+			elsif d = '1' then
+				next_state <= S0;
+				--x <= "0001";
 			end if;
 		end if;
 	end process;

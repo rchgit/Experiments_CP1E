@@ -1,0 +1,2 @@
+vhdl work "calc_simple.vhd"
+vhdl work "calc_simple_tb.vhd"
