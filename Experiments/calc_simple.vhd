@@ -50,7 +50,7 @@ begin
 		if rising_edge(clk) then
 			if reset = '1' then
 				cur_state <= IDLE;
-				result <= "0000";				
+				--result <= "0000";				
 			else
 				cur_state <= next_state;
 			end if;
@@ -62,11 +62,14 @@ begin
 		if cur_state = IDLE then
 			if add = '1' then
 				next_state <= sum;
-			elsif sub = '1' then
-				next_state <= diff;
+			else 
+				if sub = '1' then
+					next_state <= diff;
+				else
+					next_state <= IDLE;
+				end if;
 			end if;
 		elsif cur_state = sum then
-			
 			if equ = '1' then
 				next_state <= IDLE;
 			else
@@ -83,22 +86,28 @@ begin
 		end if;
 	end process;
 	
-	output_dec: process(cur_state)
+	output_dec: process(cur_state,reset,number)
 	begin
-		if cur_state = IDLE then
+		if reset = '1' then
+			numTemp <= "0000";
+			resTemp <= "0000";
+			result <= "ZZZZ";
+		elsif cur_state = IDLE then
 			numTemp <= number;
-			
+			--resTemp <= resTemp;
+			result <= resTemp;
 		elsif cur_state = sum then
+			numTemp <= numTemp;
 			resTemp <= numTemp + number;
-			if equ = '1' then
-				result <= resTemp;
-			end if;
+			result <= "ZZZZ";
 		elsif cur_state = diff then
+			numTemp <= numTemp;
 			resTemp <= numTemp - number;
-			if equ = '1' then
-				result <= resTemp;
-			end if;
-			
+			result <= "ZZZZ";
+		else
+			numTemp <= numTemp;
+			resTemp <= resTemp;
+			result <= "ZZZZ";	
 		end if;
 	end process;
 
